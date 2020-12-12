@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int main(){
+	
+	float weight[6];
+	float sum = 0.0;
+	float avg = 0.0;
+	int a;
+	
+	printf("정수 6개를 입력하세요: ");
+	
+	for(a=0 ; a<6 ; a++){
+		scanf("%f",&weight[a]);
+		sum += weight[a];	
+	}
+	
+	avg = sum / 6.0;
+	printf("%.1f\n",avg);
+	
+	return 0;
+}
