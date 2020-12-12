@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+
+int main(){
+	
+	int num[10];
+	int a;
+	int sum=0;
+	int sum_avg=0;
+	float avg=0.0;
+	
+	printf("정수 10개를 입력하세요: ");
+	
+	for(a=1 ; a<=10 ; a++){
+		scanf("%d",&num[a]);
+	}
+
+	for(a=1 ; a<=10 ;a++){	
+		if(a%2==0){
+			sum += num[a];
+		}else{
+			sum_avg += num[a];
+		}
+		avg = sum_avg/5.0;
+	}
+	
+	printf("sum: %d\n",sum);
+	printf("avg: %.1f\n",avg);
+	
+	return 0;
+}
