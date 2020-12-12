@@ -1,0 +1,22 @@
+//문자열을 “Hong Gil Dong”으로 초기화 한 후 3번부터 6번까지의 문자를 차례로 출력하세요.
+#include <stdio.h>
+#include <string.h>
+// string 사용을 위해 string.h 헤터파일을 포함시켜줘야 합니다.
+
+int main(){
+	
+	char name[]="Hong Gil Dong";
+	int i;
+	int len = strlen(name);
+	// name 문자열의 길이를 구하는 string 합수 : strlen
+	
+	for (i=0; i<len; i++){
+		if(i>=3 && i<=6){
+			printf("%c",name[i]);
+		}
+	}
+	printf("\n");
+	
+	return 0;
+	
+}
